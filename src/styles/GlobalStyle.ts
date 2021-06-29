@@ -17,6 +17,7 @@ const globalStyles = createGlobalStyle`
         font-size: 14px;
         font-weight: 400;
         overflow: hidden;
+        white-space: nowrap;
     }
 `;
 export default globalStyles;

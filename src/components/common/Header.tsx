@@ -14,8 +14,11 @@ const Icon = styled.div`
   font-size: 1.6rem;
 `;
 
+const StyledLink = styled(Link)`
+  background: gold;
+`;
+
 const Top = styled.div`
-  background: ${colors.theme.GreenYellow};
   display: flex;
   align-items: center;
   height: 50px;
@@ -35,9 +38,23 @@ const Top = styled.div`
 
 const Navigator = styled.div`
   display: flex;
-  height: 50px;
+  height: 40px;
   align-items: center;
+  border-bottom: 1px solid #eee;
+  padding: 0 5px;
+  overflow-x: scroll;
+  gap: 10px;
 `;
+
+const navigatorData = [
+  { label: '홈', url: '/' },
+  { label: '팔로잉', url: '/' },
+  { label: '집들이', url: '/' },
+  { label: '노하우', url: '/' },
+  { label: '전문가집들이', url: '/' },
+  { label: '셀프가이드', url: '/' },
+  { label: '질문과 답변', url: '/' },
+];
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -74,9 +91,11 @@ const Header = () => {
           </div>
         </Top>
         <Navigator>
-          <Link to="/">home</Link>
-          <Link to="/login">login</Link>
-          <Link to="/signup">signup</Link>
+          {navigatorData.map((data, i) => (
+            <div key={i}>
+              <Link to={`${data.url}`}>{data.label}</Link>
+            </div>
+          ))}
         </Navigator>
       </Container>
     </>
