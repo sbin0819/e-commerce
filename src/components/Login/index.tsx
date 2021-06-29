@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 // import { Input } from '../common';
 
@@ -53,7 +54,9 @@ const Button = styled.button`
 const index = () => {
   return (
     <Conatiner>
-      <Logo>AKEI</Logo>
+      <Logo>
+        <Link to="/">AKEI</Link>
+      </Logo>
       <FormContainer>
         <Input placeholder="이메일" />
         <Input placeholder="비밀번호" type="password" />
