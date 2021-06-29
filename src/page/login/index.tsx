@@ -1,5 +1,7 @@
+import Login from '../../components/Login';
+
 const index = () => {
-  return <div>login</div>;
+  return <Login />;
 };
 
 export default index;

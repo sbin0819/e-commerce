@@ -2,6 +2,12 @@ import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
 const globalStyles = createGlobalStyle`
     ${reset};
+    html {
+    box-sizing: border-box;
+    }
+    *, *:before, *:after {
+    box-sizing: inherit;
+    }
     a{
         text-decoration:none;
         color:inherit;
@@ -16,7 +22,7 @@ const globalStyles = createGlobalStyle`
         font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-size: 14px;
         font-weight: 400;
-        overflow: hidden;
+        /* overflow: hidden; */
         white-space: nowrap;
     }
 `;
