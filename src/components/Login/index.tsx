@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-// import { Input } from '../common';
+import { Input, Button } from '../common';
 
 import { FcGoogle } from 'react-icons/fc';
 import { AiFillFacebook, AiFillGithub } from 'react-icons/ai';
@@ -29,31 +29,8 @@ const FormContainer = styled.form`
   }
 `;
 
-const Input = styled.input`
-  height: 50px;
-  padding: 13px 15px 14px;
-  border: 1px solid #eee;
-  font-size: 16px;
-  border-radius: 4px;
-  :focus {
-    border: 1px solid #f77;
-  }
-  ::placeholder {
-    color: #999;
-  }
-`;
-
-const Button = styled.button`
-  height: 50px;
-  border: none;
-  background: #35c5f0;
-  color: #fff;
-  font-size: 18px;
-  font-weight: bold;
-  border-radius: 4px;
-`;
-
 const Config = styled.div`
+  display: flex;
   gap: 15px;
 `;
 
@@ -95,7 +72,7 @@ const index = () => {
       </FormContainer>
       <Config>
         <Link to="/">비밀번호 재설정</Link>
-        <Link to="/">회원가입</Link>
+        <Link to="/signup">회원가입</Link>
       </Config>
       <SnsLogin>
         <p className="info">SNS 계정으로 간편 로그인/회원가입</p>
