@@ -8,6 +8,7 @@ const Container = styled.button`
   font-size: 18px;
   font-weight: bold;
   border-radius: 4px;
+  width: 100%;
 `;
 
 interface IProps {
