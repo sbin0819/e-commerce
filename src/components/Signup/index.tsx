@@ -9,7 +9,8 @@ const Conatiner = styled.div`
 `;
 
 const Logo = styled.div`
-  font-size: 38px;
+  margin-left: 40px;
+  font-size: 34px;
 `;
 
 const InnerConatiner = styled.div`
