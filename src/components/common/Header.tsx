@@ -2,7 +2,6 @@ import { useState } from 'react';
 
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { colors } from '../../styles';
 import { FiMenu } from 'react-icons/fi';
 import { AiOutlineShoppingCart, AiOutlineSearch } from 'react-icons/ai';
 
