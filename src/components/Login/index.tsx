@@ -44,7 +44,7 @@ const index = () => {
   return (
     <Conatiner>
       <Logo>
-        <Link to="/">AKEI</Link>
+        <Link to="/">AEKI</Link>
       </Logo>
       <FormContainer>
         <Input placeholder="이메일" />

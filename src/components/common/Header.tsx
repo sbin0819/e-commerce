@@ -7,14 +7,12 @@ import { AiOutlineShoppingCart, AiOutlineSearch } from 'react-icons/ai';
 
 import Sidebar from './Sidebar';
 
+import { comunityList } from '../../libs/menus';
+
 const Container = styled.div``;
 
 const Icon = styled.div`
   font-size: 1.6rem;
-`;
-
-const StyledLink = styled(Link)`
-  background: gold;
 `;
 
 const Top = styled.div`
@@ -45,16 +43,6 @@ const Navigator = styled.div`
   gap: 10px;
 `;
 
-const navigatorData = [
-  { label: '홈', url: '/' },
-  { label: '팔로잉', url: '/' },
-  { label: '집들이', url: '/' },
-  { label: '노하우', url: '/' },
-  { label: '전문가집들이', url: '/' },
-  { label: '셀프가이드', url: '/' },
-  { label: '질문과 답변', url: '/' },
-];
-
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const onOpen = () => {
@@ -72,7 +60,7 @@ const Header = () => {
             <FiMenu />
           </Icon>
           <div className="logo">
-            <Link to="/">AKEI</Link>
+            <Link to="/">AEKI</Link>
           </div>
           <div className="nav_right">
             <Icon>
@@ -90,7 +78,7 @@ const Header = () => {
           </div>
         </Top>
         <Navigator>
-          {navigatorData.map((data, i) => (
+          {comunityList.map((data, i) => (
             <div key={i}>
               <Link to={`${data.url}`}>{data.label}</Link>
             </div>
