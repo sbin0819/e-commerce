@@ -1,5 +1,14 @@
 import styled from 'styled-components';
 
+const Container = styled.div`
+  width: 100%;
+  input,
+  label {
+    display: block;
+    padding: 10px 0;
+  }
+`;
+
 const Input = styled.input`
   height: 50px;
   padding: 13px 15px 14px;
@@ -19,15 +28,29 @@ interface IProps {
   label?: string;
   placeholder?: string;
   type?: string;
+  icon?: any;
 }
-const index: React.FC<IProps> = ({ label, type = 'text', placeholder }) => {
+const index: React.FC<IProps> = ({
+  label,
+  type = 'text',
+  placeholder,
+  icon = null,
+}) => {
   return (
-    <div>
-      <label>
-        {label}
-        <Input type={type} placeholder={placeholder} />
-      </label>
-    </div>
+    <Container>
+      {label ? (
+        <label>
+          {label}
+          {icon}
+          <Input type={type} placeholder={placeholder} />
+        </label>
+      ) : (
+        <>
+          {icon}
+          <Input type={type} placeholder={placeholder} />
+        </>
+      )}
+    </Container>
   );
 };
 
