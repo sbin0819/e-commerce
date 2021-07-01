@@ -24,6 +24,16 @@ const globalStyles = createGlobalStyle`
         font-weight: 400;
         /* overflow: hidden; */
         white-space: nowrap;
+        margin: auto auto;
+        width: 980px;
+        color: #424242;
+        @media only screen and (max-width: 1100px) {
+        width: 80%;
+        }
+        @media only screen and (max-width: 990px) {
+        width: 100%;
+        margin: 0;
+        }
     }
 `;
 export default globalStyles;

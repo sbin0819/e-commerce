@@ -9,13 +9,15 @@ const Container = styled.button`
   font-weight: bold;
   border-radius: 4px;
   width: 100%;
+  cursor: pointer;
 `;
 
 interface IProps {
   children: any;
+  onClick?: any;
 }
-const Button: React.FC<IProps> = ({ children }) => {
-  return <Container>{children}</Container>;
+const Button: React.FC<IProps> = ({ children, onClick }) => {
+  return <Container onClick={onClick}>{children}</Container>;
 };
 
 export default Button;

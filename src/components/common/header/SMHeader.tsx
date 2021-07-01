@@ -1,13 +1,13 @@
 import { useState } from 'react';
-
-import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { FiMenu } from 'react-icons/fi';
 import { AiOutlineShoppingCart, AiOutlineSearch } from 'react-icons/ai';
 
-import Sidebar from './Sidebar';
+import Sidebar from '../Sidebar';
 
-import { comunityList } from '../../libs/menus';
+import { comunityList } from '../../../libs/menus';
+
+import styled from 'styled-components';
 
 const Container = styled.div``;
 
@@ -43,7 +43,7 @@ const Navigator = styled.div`
   gap: 10px;
 `;
 
-const Header = () => {
+const SMHeader = () => {
   const [isOpen, setIsOpen] = useState(false);
   const onOpen = () => {
     setIsOpen(true);
@@ -51,6 +51,7 @@ const Header = () => {
   const onClose = () => {
     setIsOpen(false);
   };
+
   return (
     <>
       {isOpen && <Sidebar onClose={onClose} />}
@@ -89,4 +90,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default SMHeader;

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import styled from 'styled-components';
 import { Button } from '.';
 
@@ -107,6 +107,7 @@ interface IProps {
 }
 
 const Sidebar: React.FC<IProps> = ({ onClose }) => {
+  const history = useHistory();
   const [communityBtn, setCommunityBtn] = useState(false);
   const [storeBtn, setStoreBtn] = useState({
     isOpen: true,
@@ -118,8 +119,8 @@ const Sidebar: React.FC<IProps> = ({ onClose }) => {
         <SidebarContainer>
           <Logo>AEKI</Logo>
           <AccountBtns>
-            <Button>로그인</Button>
-            <Button>회원가입</Button>
+            <Button onClick={() => history.push('/login')}>로그인</Button>
+            <Button onClick={() => history.push('/signup')}>회원가입</Button>
           </AccountBtns>
           <Menus>
             <div className="dropdown community">
