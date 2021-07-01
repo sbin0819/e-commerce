@@ -84,8 +84,12 @@ const Header = () => {
           </div>
         </div>
         <div className="nav_right">
-          <div className="link login">로그인</div>
-          <div className="link signup">회원가입</div>
+          <div className="link login">
+            <Link to="/login">로그인</Link>
+          </div>
+          <div className="link signup">
+            <Link to="/signup">회원가입</Link>
+          </div>
           <div className="dropdown">
             <Button>글쓰기</Button>
           </div>
