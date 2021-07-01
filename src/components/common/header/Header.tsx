@@ -71,7 +71,9 @@ const Header = () => {
   return (
     <Container>
       <Top>
-        <div className="logo">AEKI</div>
+        <div className="logo">
+          <Link to="/">AEKI</Link>
+        </div>
         <div className="nav_left">
           <div>
             <Link to="/">커뮤니티</Link>

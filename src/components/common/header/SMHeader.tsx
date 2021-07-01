@@ -70,12 +70,6 @@ const SMHeader = () => {
             <Icon>
               <AiOutlineShoppingCart />
             </Icon>
-            <div>
-              <Link to="/login">로그인</Link>
-            </div>
-            <div>
-              <Link to="/signup">회원가입</Link>
-            </div>
           </div>
         </Top>
         <Navigator>
