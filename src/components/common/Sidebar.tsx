@@ -41,6 +41,7 @@ const Side = styled.div`
   width: 40%;
   height: 100%;
   z-index: 2;
+  overflow: scroll;
   @media only screen and (max-width: 768px) {
     width: 70%;
   }
