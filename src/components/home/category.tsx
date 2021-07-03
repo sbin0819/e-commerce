@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { categorySrc } from './images';
 
 const Container = styled.div`
-  margin: 100px 25px 0px;
+  margin: 100px 10px 0px;
   display: flex;
   align-items: center;
   overflow-x: scroll;
