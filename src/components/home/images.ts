@@ -9,17 +9,6 @@ const shortcutSrc = {
   shorcut_08: '/static/home/shortcut/shortcut_08.png',
 };
 
-// const shortcutSrc = {
-//   '쇼핑하기': '/static/home/shortcut/shortcut_01.png',
-//   '오늘의집배송': '/static/home/shortcut/shortcut_02.png',
-//   '평수별집구경': '/static/home/shortcut/shortcut_03.png',
-//   '공간별사진': '/static/home/shortcut/shortcut_04.png',
-//   '시공업체찾기': '/static/home/shortcut/shortcut_05.png',
-//   '빠른시공상담': '/static/home/shortcut/shortcut_06.png',
-//   '장마철 꿀팁': '/static/home/shortcut/shortcut_07.png',
-//   '질문과답변': '/static/home/shortcut/shortcut_08.png',
-// };
-
 const categorySrc = {
   c_01: '/static/home/cate/cate_01.png',
   c_02: '/static/home/cate/cate_02.jpg',
