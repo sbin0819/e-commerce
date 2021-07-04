@@ -1,6 +1,6 @@
-import Home from '../../components/home';
+import Home from '../../components/home'
 const index = () => {
-  return <Home />;
-};
+  return <Home />
+}
 
-export default index;
+export default index
