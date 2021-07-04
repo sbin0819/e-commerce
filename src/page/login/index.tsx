@@ -1,7 +1,7 @@
-import Login from '../../components/Login';
+import Login from '../../components/Login'
 
 const index = () => {
-  return <Login />;
-};
+  return <Login />
+}
 
-export default index;
+export default index
