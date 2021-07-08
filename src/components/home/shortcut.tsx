@@ -1,7 +1,6 @@
-/* eslint-disable jsx-a11y/alt-text */
-import { Link } from 'react-router-dom';
-import styled from 'styled-components';
-import { shortcutSrc } from './images';
+import { Link } from 'react-router-dom'
+import styled from 'styled-components'
+import { shortcutSrc } from './images'
 
 const Container = styled.div`
   margin: 25px 10px 0;
@@ -9,7 +8,7 @@ const Container = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-`;
+`
 
 const ImgContainer = styled.div`
   display: flex;
@@ -23,7 +22,7 @@ const ImgContainer = styled.div`
   img {
     width: 100%;
   }
-`;
+`
 
 const shortcut = () => {
   // link + image
@@ -86,7 +85,7 @@ const shortcut = () => {
         </p>
       </ImgContainer>
     </Container>
-  );
-};
+  )
+}
 
-export default shortcut;
+export default shortcut
