@@ -34,13 +34,6 @@
       "react-app/jest"
     ]
   },
-  "lint-staged": {
-    "**/*.{js, jsx, ts, tsx}": [
-      "tslint --fix --config tslint.precommit.json --project tsconfig.json",
-      "prettier --write",
-      "git add"
-    ]
-  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -56,8 +49,6 @@
   "devDependencies": {
     "@types/react-router-dom": "^5.1.7",
     "@types/styled-components": "^5.1.10",
-    "husky": "^7.0.0",
-    "lint-staged": "^11.0.0",
     "prettier": "^2.3.2",
     "react-app": "^1.1.2"
   }
