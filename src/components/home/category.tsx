@@ -1,14 +1,25 @@
 /* eslint-disable jsx-a11y/alt-text */
-import { Link } from 'react-router-dom';
-import styled from 'styled-components';
-import { categorySrc } from './images';
+import { Link } from 'react-router-dom'
+import styled from 'styled-components'
+import { categorySrc } from './images'
 
 const Container = styled.div`
   margin: 100px 10px 0px;
+`
+
+const TitleContainer = styled.div`
+  padding-left: 5px;
+  padding-bottom: 15px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+`
+
+const CategoryContainer = styled.div`
   display: flex;
   align-items: center;
   overflow-x: scroll;
-`;
+`
 
 const ImgContainer = styled.div`
   display: flex;
@@ -37,7 +48,7 @@ const ImgContainer = styled.div`
     overflow-wrap: break-word;
     margin: 10px auto 0;
   }
-`;
+`
 
 const title = [
   '가구',
@@ -55,24 +66,27 @@ const title = [
   '홈트레이닝',
   '유아/아동',
   '렌탈',
-];
+]
 
 const shortcut = () => {
-  console.log(categorySrc.c_01);
+  console.log(categorySrc.c_01)
   return (
     <Container>
-      {Object.entries(categorySrc).map(([key, value], i) => (
-        <ImgContainer key={key}>
-          <div className="img_wrapper">
-            <img src={`${value}`} />
-          </div>
-          <p>
-            <Link to="/">{title[i]}</Link>
-          </p>
-        </ImgContainer>
-      ))}
+      <TitleContainer>카테고리별 상품 찾기</TitleContainer>
+      <CategoryContainer>
+        {Object.entries(categorySrc).map(([key, value], i) => (
+          <ImgContainer key={key}>
+            <div className="img_wrapper">
+              <img src={`${value}`} />
+            </div>
+            <p>
+              <Link to="/">{title[i]}</Link>
+            </p>
+          </ImgContainer>
+        ))}
+      </CategoryContainer>
     </Container>
-  );
-};
+  )
+}
 
-export default shortcut;
+export default shortcut

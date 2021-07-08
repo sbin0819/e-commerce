@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import Main from './main'
 import Shortcut from './shortcut'
+import Story from './Story'
 import Category from './category'
 
 const Container = styled.div`
@@ -12,6 +13,7 @@ const index = () => {
     <Container>
       <Main />
       <Shortcut />
+      <Story />
       <Category />
     </Container>
   )
