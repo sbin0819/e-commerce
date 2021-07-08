@@ -1,3 +1,15 @@
+const mainSrc = {
+  m_01: '/static/home/main/main_01.jpg',
+}
+
+const mainSideHSrc = {
+  h_01: '/static/home/main/side/h/h_01.jpg',
+}
+
+const mainSideWSrc = {
+  w_01: '/static/home/main/side/w/w_01.jpg',
+}
+
 const shortcutSrc = {
   shorcut_01: '/static/home/shortcut/shortcut_01.png',
   shorcut_02: '/static/home/shortcut/shortcut_02.png',
@@ -7,7 +19,13 @@ const shortcutSrc = {
   shorcut_06: '/static/home/shortcut/shortcut_06.png',
   shorcut_07: '/static/home/shortcut/shortcut_07.png',
   shorcut_08: '/static/home/shortcut/shortcut_08.png',
-};
+}
+
+const storySrc = {
+  s_01: '/static/home/story/story_01.jpg',
+  s_02: '/static/home/story/story_02.jpg',
+  s_03: '/static/home/story/story_03.jpg',
+}
 
 const categorySrc = {
   c_01: '/static/home/cate/cate_01.png',
@@ -25,6 +43,13 @@ const categorySrc = {
   c_13: '/static/home/cate/cate_13.png',
   c_14: '/static/home/cate/cate_14.png',
   c_15: '/static/home/cate/cate_15.jpg',
-};
+}
 
-export { shortcutSrc, categorySrc };
+export {
+  mainSrc,
+  mainSideHSrc,
+  mainSideWSrc,
+  shortcutSrc,
+  storySrc,
+  categorySrc,
+}
