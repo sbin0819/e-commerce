@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { categorySrc } from './images'
 
 const Container = styled.div`
-  margin: 100px 10px 0px;
+  margin: 50px 10px 0px;
 `
 
 const TitleContainer = styled.div`
@@ -26,6 +26,7 @@ const ImgContainer = styled.div`
   flex-direction: column;
   align-items: center;
   margin-left: 15px;
+  padding-bottom: 20px;
   .img_wrapper {
     border-radius: 24px;
     box-shadow: 0 2px 3px 0 rgb(234 235 239 / 40%);
@@ -69,7 +70,6 @@ const title = [
 ]
 
 const shortcut = () => {
-  console.log(categorySrc.c_01)
   return (
     <Container>
       <TitleContainer>카테고리별 상품 찾기</TitleContainer>
