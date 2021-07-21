@@ -20,23 +20,23 @@ const PictureContainer = styled.div`
   flex-wrap: wrap;
   align-items: center;
   gap: 15px;
+`
 
-  div {
-    display: flex;
-    align-items: center;
-    width: 23%;
-    background: gold;
-    height: 215px;
+const ImageContainer = styled.div`
+  display: flex;
+  align-items: center;
+  width: 23%;
+  background: #f5f5f5;
+  height: 215px;
+  border-radius: 8px;
+  @media (max-width: 800px) {
+    width: 47%;
+    height: 210px;
+  }
+  img {
+    height: 100%;
+    width: 100%;
     border-radius: 8px;
-    @media (max-width: 800px) {
-      width: 47%;
-      height: 210px;
-    }
-    img {
-      height: 100%;
-      width: 100%;
-      border-radius: 8px;
-    }
   }
 `
 
@@ -46,9 +46,9 @@ const pictures = () => {
       <TitleContainer>오늘의 인기 사진</TitleContainer>
       <PictureContainer>
         {Object.values(pictureSrc).map((value) => (
-          <div>
+          <ImageContainer>
             <img src={`${value}`} />
-          </div>
+          </ImageContainer>
         ))}
       </PictureContainer>
     </Container>

@@ -17,6 +17,7 @@ const index = () => {
       <Story />
       <Category />
       <Pictures />
+      <div style={{ height: '200px' }} />
     </Container>
   )
 }
