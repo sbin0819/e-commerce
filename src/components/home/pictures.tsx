@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 import styled from 'styled-components'
 import { pictureSrc } from './images'
 
@@ -42,13 +42,15 @@ const ImageContainer = styled.div`
 `
 
 const pictures = () => {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  let history = useHistory()
   return (
     <Container>
       <TitleContainer>오늘의 인기 사진</TitleContainer>
       <PictureContainer>
         {Object.values(pictureSrc).map((value, i) => (
           <React.Fragment key={i}>
-            <ImageContainer>
+            <ImageContainer onClick={() => history.push(`/today/${i}`)}>
               <img src={`${value}`} />
             </ImageContainer>
           </React.Fragment>
