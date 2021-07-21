@@ -45,6 +45,17 @@ const categorySrc = {
   c_15: '/static/home/cate/cate_15.jpg',
 }
 
+const pictureSrc = {
+  p_1: '/static/home/picture/p_1.jpg',
+  p_2: '/static/home/picture/p_2.jpg',
+  p_3: '/static/home/picture/p_3.jpg',
+  p_4: '/static/home/picture/p_4.jpg',
+  p_5: '/static/home/picture/p_5.jpg',
+  p_6: '/static/home/picture/p_6.jpg',
+  p_7: '/static/home/picture/p_7.jpg',
+  p_8: '/static/home/picture/p_8.jpg',
+}
+
 export {
   mainSrc,
   mainSideHSrc,
@@ -52,4 +63,5 @@ export {
   shortcutSrc,
   storySrc,
   categorySrc,
+  pictureSrc,
 }

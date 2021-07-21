@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+import { pictureSrc } from './images'
 
 const Container = styled.div`
   margin: 50px 10px 0px;
@@ -26,12 +27,15 @@ const PictureContainer = styled.div`
     width: 23%;
     background: gold;
     height: 215px;
+    border-radius: 8px;
     @media (max-width: 800px) {
       width: 47%;
       height: 210px;
     }
     img {
+      height: 100%;
       width: 100%;
+      border-radius: 8px;
     }
   }
 `
@@ -41,14 +45,11 @@ const pictures = () => {
     <Container>
       <TitleContainer>오늘의 인기 사진</TitleContainer>
       <PictureContainer>
-        <div>gold</div>
-        <div>gold</div>
-        <div>gold</div>
-        <div>gold</div>
-        <div>gold</div>
-        <div>gold</div>
-        <div>gold</div>
-        <div>gold</div>
+        {Object.values(pictureSrc).map((value) => (
+          <div>
+            <img src={`${value}`} />
+          </div>
+        ))}
       </PictureContainer>
     </Container>
   )
