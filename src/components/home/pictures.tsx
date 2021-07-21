@@ -1,4 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
+import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import { pictureSrc } from './images'
@@ -45,10 +46,12 @@ const pictures = () => {
     <Container>
       <TitleContainer>오늘의 인기 사진</TitleContainer>
       <PictureContainer>
-        {Object.values(pictureSrc).map((value) => (
-          <ImageContainer>
-            <img src={`${value}`} />
-          </ImageContainer>
+        {Object.values(pictureSrc).map((value, i) => (
+          <React.Fragment key={i}>
+            <ImageContainer>
+              <img src={`${value}`} />
+            </ImageContainer>
+          </React.Fragment>
         ))}
       </PictureContainer>
     </Container>
