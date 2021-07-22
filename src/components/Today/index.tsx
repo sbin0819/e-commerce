@@ -11,7 +11,6 @@ const Container = styled.div``
 const ContentContainer = styled.div`
   display: flex;
   height: auto;
-  min-height: 800px;
   flex-wrap: wrap;
 `
 
@@ -23,7 +22,6 @@ function TodayComponent() {
       res.json()
     )
   )
-  console.log(data)
   // top profile footer Nav
   return (
     <Container>
@@ -31,6 +29,7 @@ function TodayComponent() {
         <MainContent />
         <SideSticky />
       </ContentContainer>
+      <div style={{ height: 400, borderTop: '1px solid #eee' }} />
     </Container>
   )
 }

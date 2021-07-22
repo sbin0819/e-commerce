@@ -72,6 +72,7 @@ const NavStory = styled.div`
     flex-direction: column;
     justify-content: center;
     padding-left: 20px;
+    cursor: pointer;
     .nav_title {
       font-size: 14px;
       font-weight: 700;

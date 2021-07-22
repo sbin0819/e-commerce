@@ -30,6 +30,7 @@ const ImageContainer = styled.div`
   background: #f5f5f5;
   height: 215px;
   border-radius: 8px;
+  cursor: pointer;
   @media (max-width: 800px) {
     width: 47%;
     height: 210px;
@@ -37,7 +38,13 @@ const ImageContainer = styled.div`
   img {
     height: 100%;
     width: 100%;
+    object-fit: cover;
     border-radius: 8px;
+    :hover {
+      width: 104%;
+      min-height: 102%;
+      transition: transform 0.2s;
+    }
   }
 `
 
