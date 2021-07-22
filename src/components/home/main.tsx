@@ -16,7 +16,17 @@ const Container = styled.div`
       border-radius: 4px;
       width: 100%;
       height: 100%;
+      object-fit: cover;
       overflow: hidden;
+      cursor: pointer;
+      :hover {
+        transform: scale(1.01);
+        -webkit-transform: scale(1.01);
+        -moz-transform: scale(1.01);
+        -ms-transform: scale(1.01);
+        -o-transform: scale(1.01);
+        object-fit: cover;
+      }
     }
   }
   .event {
@@ -26,7 +36,16 @@ const Container = styled.div`
       border-radius: 4px;
       width: 100%;
       height: 100%;
-      overflow: hidden;
+      object-fit: cover;
+      cursor: pointer;
+      :hover {
+        transform: scale(1.01);
+        -webkit-transform: scale(1.01);
+        -moz-transform: scale(1.01);
+        -ms-transform: scale(1.01);
+        -o-transform: scale(1.01);
+        object-fit: cover;
+      }
     }
   }
   @media (max-width: 650px) {
@@ -36,6 +55,14 @@ const Container = styled.div`
       img {
         min-height: 80px;
         width: 100%;
+        :hover {
+          transform: scale(1.01);
+          -webkit-transform: scale(1.01);
+          -moz-transform: scale(1.01);
+          -ms-transform: scale(1.01);
+          -o-transform: scale(1.01);
+          object-fit: cover;
+        }
       }
     }
   }
@@ -47,10 +74,10 @@ const Main = () => {
   return (
     <Container>
       <div className="main">
-        <img src={`${mainSrc.m_01}`} />
+        <img src={`${mainSrc.m_01}`} alt="main" />
       </div>
       <div className="event">
-        <img src={`${side}`} />
+        <img src={`${side}`} alt="event" />
       </div>
     </Container>
   )

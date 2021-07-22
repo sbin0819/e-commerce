@@ -18,6 +18,10 @@ const Container = styled.div`
       height: 250px;
       background: grey;
     }
+    @media (max-width: 489px) {
+      position: relative;
+      top: 0;
+    }
   }
 `
 

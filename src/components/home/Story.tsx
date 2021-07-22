@@ -29,6 +29,8 @@ const ImageStory = styled.div`
   img {
     border-radius: 4px;
     width: 100%;
+    object-fit: cover;
+    cursor: pointer;
   }
   .content {
     margin: 10px 5px 10px 5px;

@@ -35,6 +35,7 @@ const ImgContainer = styled.div`
     overflow: hidden;
     padding: 5px;
     img {
+      cursor: pointer;
       width: 90px;
     }
   }
