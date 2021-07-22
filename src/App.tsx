@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { Route, useLocation } from 'react-router-dom'
 import { GlobalStyles } from './styles'
 import { Header } from './components/common'
@@ -11,6 +12,11 @@ import Today from './page/today'
 function App() {
   const { pathname } = useLocation()
   const showHeader = pathname !== '/login' && pathname !== '/signup'
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+    })
+  }, [pathname])
   return (
     <>
       <GlobalStyles />
