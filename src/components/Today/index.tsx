@@ -1,5 +1,6 @@
 import useWindowSize from '../../hooks/useWindowSize'
 import { useParams } from 'react-router-dom'
+import { useQuery } from 'react-query'
 import styled from 'styled-components'
 
 import MainContent from './MainContent'
@@ -16,6 +17,13 @@ const ContentContainer = styled.div`
 
 function TodayComponent() {
   const { width }: { width: any } = useWindowSize()
+  const { slug }: { slug: string } = useParams()
+  const { isLoading, error, data, isFetching } = useQuery('repoData', () =>
+    fetch(`https://jsonplaceholder.typicode.com/todos/${slug}`).then((res) =>
+      res.json()
+    )
+  )
+  console.log(data)
   // top profile footer Nav
   return (
     <Container>
