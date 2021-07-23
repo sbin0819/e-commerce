@@ -1,5 +1,9 @@
 import styled from 'styled-components'
 
+import { FcGoogle } from 'react-icons/fc'
+import { RiKakaoTalkFill } from 'react-icons/ri'
+import { AiFillFacebook, AiFillGithub } from 'react-icons/ai'
+
 const Container = styled.div`
   padding-top: 25px;
   flex: 1;
@@ -25,6 +29,14 @@ const Container = styled.div`
   }
 `
 
+const SocialNetworkIcons = styled.div`
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+  font-size: 45px;
+  gap: 15px;
+`
+
 function Profile() {
   return (
     <Container>
@@ -37,6 +49,14 @@ function Profile() {
           <div></div>
           <div></div>
         </div>
+        <SocialNetworkIcons>
+          <RiKakaoTalkFill
+            style={{ background: 'gold', borderRadius: '6px' }}
+          />
+          <FcGoogle />
+          <AiFillFacebook style={{ color: '#1877F2' }} />
+          <AiFillGithub />
+        </SocialNetworkIcons>
       </div>
     </Container>
   )
