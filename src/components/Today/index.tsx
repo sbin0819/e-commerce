@@ -3,8 +3,10 @@ import { useParams } from 'react-router-dom'
 import { useQuery } from 'react-query'
 import styled from 'styled-components'
 
+import MProfile from './MProfile'
 import MainContent from './MainContent'
 import SideSticky from './SideSticky'
+import MFooter from './MFooter'
 
 const Container = styled.div``
 
@@ -26,11 +28,13 @@ function TodayComponent() {
 
   return (
     <Container>
+      {width < 440 && <MProfile />}
       <ContentContainer>
         <MainContent />
         <SideSticky />
       </ContentContainer>
       <div style={{ height: 400, borderTop: '1px solid #eee' }} />
+      {width < 440 && <MFooter />}
     </Container>
   )
 }

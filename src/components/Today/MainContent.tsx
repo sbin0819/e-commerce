@@ -10,7 +10,7 @@ const LeftContainer = styled.div`
   flex: 2;
   min-width: 250px;
   border-right: 1px solid #eee;
-
+  background: #fff;
   .top_info {
     margin: 0 30px;
     span {
