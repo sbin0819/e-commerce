@@ -1,7 +1,6 @@
+import Icon from '../common/Icon'
 import Button from '../common/Button'
 import styled from 'styled-components'
-
-import { AiOutlineUser } from 'react-icons/ai'
 
 const Container = styled.div`
   padding: 16px;
@@ -13,16 +12,6 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     .icon {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 50%;
-      width: 40px;
-      height: 40px;
-      background: #ececec;
-      svg {
-        font-size: 24px;
-      }
     }
     .info {
       margin-left: 8px;
@@ -53,7 +42,7 @@ function Profile(props) {
       <Container>
         <div className="profile_wrapper">
           <div className="icon">
-            <AiOutlineUser />
+            <Icon />
           </div>
           <div className="info">
             <h4>Yoo's Bistro</h4>
