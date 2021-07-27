@@ -6,8 +6,8 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 38px;
+  height: 38px;
   background: #ececec;
   svg {
     font-size: 24px;

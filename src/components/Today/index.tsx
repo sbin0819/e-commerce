@@ -31,7 +31,7 @@ function TodayComponent() {
       {width < 440 && <MProfile />}
       <ContentContainer>
         <MainContent />
-        <SideSticky />
+        {width > 650 && <SideSticky />}
       </ContentContainer>
       <div style={{ height: 400, borderTop: '1px solid #eee' }} />
       {width < 440 && <MFooter />}

@@ -14,3 +14,27 @@ export const mockData = {
     { id: '5', title: '여름인테리어' },
   ],
 }
+
+export const mockComment = [
+  {
+    id: '1',
+    username: '철수',
+    comment: '와 너무 이뻐요!',
+    like: 1,
+    subComment: [],
+  },
+  {
+    id: '2',
+    username: '영희',
+    comment: '카페 같아요',
+    like: 0,
+    subComment: [],
+  },
+  {
+    id: '3',
+    username: '영희',
+    comment: '너무 이쁜 공간이네요',
+    like: 0,
+    subComment: [{ id: '5', username: '민수', comment: '222', like: 0 }],
+  },
+]
