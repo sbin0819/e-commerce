@@ -9,6 +9,8 @@ import Login from './page/login'
 import Signup from './page/signup'
 import Today from './page/today'
 
+import Ready from './page/ready'
+
 function App() {
   const { pathname } = useLocation()
   const showHeader = pathname !== '/login' && pathname !== '/signup'
@@ -26,6 +28,7 @@ function App() {
       <Route exact path="/login" component={Login} />
       <Route exact path="/signup" component={Signup} />
       <Route exact path="/today/:slug" component={Today} />
+      <Route exact path="/ready" component={Ready} />
     </>
   )
 }

@@ -1,13 +1,13 @@
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
-import { Button } from '..';
+import { Button } from '..'
 
-import { comunityList } from '../../../libs/menus';
+import { comunityList } from '../../../libs/menus'
 
 const Container = styled.div`
   color: #424242;
-`;
+`
 
 const Top = styled.div`
   position: sticky;
@@ -52,7 +52,7 @@ const Top = styled.div`
       width: 85px;
     }
   }
-`;
+`
 
 const Nav = styled.div`
   display: flex;
@@ -65,7 +65,7 @@ const Nav = styled.div`
     padding: 6px 8px 4px;
     color: #424242;
   }
-`;
+`
 
 const Header = () => {
   return (
@@ -79,7 +79,7 @@ const Header = () => {
             <Link to="/">커뮤니티</Link>
           </div>
           <div>
-            <Link to="/">스토어</Link>
+            <Link to="/store">스토어</Link>
           </div>
           <div>
             <Link to="/">인테리어시공</Link>
@@ -105,7 +105,7 @@ const Header = () => {
         ))}
       </Nav>
     </Container>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
