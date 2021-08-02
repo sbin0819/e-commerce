@@ -1,7 +1,20 @@
-import React from 'react';
+import TopBanner from './TopBanner'
+import TodayDeal from './TodayDeal'
+import BestItems from './BestItems'
+
+import styled from 'styled-components'
+
+const Container = styled.div``
 
 const index = () => {
-  return <div>store</div>;
-};
+  return (
+    <Container>
+      <TopBanner />
+      <TodayDeal />
+      <BestItems />
+      <div style={{ height: '80px' }} />
+    </Container>
+  )
+}
 
-export default index;
+export default index
