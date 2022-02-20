@@ -9,6 +9,7 @@
 - React
 - styled-components
 - netlify
+- nestjs
 
 # Demo Site
 - [Demo](https://amazing-jepsen-34d8db.netlify.app/)
