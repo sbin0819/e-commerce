@@ -1,15 +1,14 @@
-# e-commerce
+# 오늘의 집 클론
 
-오늘의 집 클론
+# more info
+- [notion](https://www.notion.so/d8368aed50d345bcbead8829f8f177c6)
 
-[Demo](https://amazing-jepsen-34d8db.netlify.app/)
 
-### responsive-header
 
-https://dev.to/hajarnasr/responsive-header-in-react-59h5
+# Tech Requirement (Tech Stack)
+- React
+- styled-components
+- netlify
 
-### amplify server 구축
-
-### auth 구축
-
-### db 구축
+# Demo Site
+- [Demo](https://amazing-jepsen-34d8db.netlify.app/)
